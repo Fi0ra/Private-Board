@@ -8,7 +8,7 @@ Nous serrons reconnaissant envers les moindres remerciements / dons pour ce proj
 
 	1/ Un serveur web et mysql ok
 
-	2/ que les fichiers que vous souhaitez affichés soit situés dans un dossier sur ce serveur web dans le www ou ailleurs en effectuant un lien symbolique ( ln -s /home/pseudo/torrents /var/www/torrents )
+	2/ que les fichiers que vous souhaitez affichés soit situés dans un dossier sur ce serveur web dans le www ou ailleurs en effectuant un lien symbolique ( ln -s /home/pseudo/folder1 /var/www/folder1 )
 
 	3/ que le site web (situé dans le dossier www), une fois décompressé soit situé n'importe ou sur le même serveur web, dans le www du serveur (mettez le dans un dossier à part nommé comme vous le souhaitez)
 
