@@ -97,7 +97,12 @@ foreach($file as $key => $value)
 		if($saison != $save_saison) $Output .= "<tr></tr><tr><th colspan='8'>".$saison."</th></tr>";
 	}
 	// on affiche le tableau
-	$stream = detect_stream($value['fichier'],str_replace($way, $path_absolu, $value['Path']. DIRECTORY_SEPARATOR .$value['fichier']));
+	
+	$size_way = strlen($way);
+	$url_file = $value['Path']. DIRECTORY_SEPARATOR .$value['fichier'];
+	$url_file = substr($url_file,$size_way);
+	$url_file = $path_absolu.$url_file;
+	$stream = detect_stream($value['fichier'],$url_file);
 	
 	$Output .= '
 			<tr>

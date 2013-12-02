@@ -85,6 +85,12 @@ switch($action)
 					$selection = $connexion->quote($select); 
 					$count = $connexion->exec("UPDATE users SET userstyle = $selection WHERE username = $username");
 				break;
+				case 11:
+					$select="style_noel.css";
+					$username = $connexion->quote($_SESSION['login']); 
+					$selection = $connexion->quote($select); 
+					$count = $connexion->exec("UPDATE users SET userstyle = $selection WHERE username = $username");
+				break;
 				default:
 					$select="style3.css";
 					$username = $connexion->quote($_SESSION['login']); 

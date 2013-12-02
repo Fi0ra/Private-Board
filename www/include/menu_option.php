@@ -28,7 +28,9 @@
 			
 			if($url_slash[$nb_slash] == "tuto_download.php"){echo '<li><div id="content_list" class="cat-current"><a href="tuto_download.php" class="url">Aide : Téléchargement</a></div></li>';}
 			else{echo '<li><div id="content_list" class="cat"><a href="tuto_download.php" class="url">Aide : Téléchargement</a></div></li>';}
-					
+						
+			if($url_slash[$nb_slash] == "don.php"){echo '<li><div id="content_list" class="personal-current"><a href="don.php" class="url">Faire un don</a></div></li>';}
+			else{echo '<li><div id="content_list" class="personal"><a href="don.php" class="url">Faire un don</a></div></li>';}	
 				
 		echo '</ul>';
 

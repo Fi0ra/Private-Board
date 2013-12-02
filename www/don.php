@@ -44,6 +44,11 @@ include("./include/menu_option.php");
 		<br /><br />
 		Les dons sont uniquement une façon de remercier ou d'investir pour plus de capacité.
 		<br /><br />
+		<ul>
+		<li>Le serveur me coute 15€ par mois pour 500go</li>
+		<li>Passer à 1000go reviendrait à 25€/mois</li>
+		<li>Passer à 2500go reviendrait à 35€ de frais d'installation puis 25€/mois</li>
+		</ul>
 		
 	</div>
 	<p>

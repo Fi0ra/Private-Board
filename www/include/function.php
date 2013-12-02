@@ -24,12 +24,12 @@ function detect_stream($file,$path)
 {	
 	if(preg_match("/\.avi/", $file) || preg_match("/\.mp4/", $file) || preg_match("/\.mkv/", $file))
 	{
-		$stream = '<a href="stream.php?file='.$path.'" > <img class="icon" src="./img/stream_all_divx.png" />';
+		$stream = '<a href="stream.php?file='.$path.'" > <img class="icon" src="./img/iPhone/iPhone_stream_all.png" width="16px" style="border:0px;vertical-align:top;"/>';
 		return $stream;
 	}
 	else
 	{
-		$dl = '<img class="icon" src="./img/stream_all_deny.png" />';
+		$dl = '<img class="icon" src="./img/iPhone/iPhone_stream_all_deny.png" width="16px" style="border:0px;vertical-align:top;"/>';
 		return $dl;
 	}	
 }
@@ -83,11 +83,11 @@ function detect_allocine($file,$path, $code_cat)
 				}
 			} 
 			
-		$allocine = '<a href="http://www.allocine.fr/recherche/?q='.$end_url.'" target=_blank><img src="./img/info_all_allocine.png" /></a>';	
+		$allocine = '<a href="http://www.allocine.fr/recherche/?q='.$end_url.'" target=_blank><img src="./img/info_all.png"  width="16px" style="border:0px;vertical-align:top;"/></a>';	
 	}
 	else
 	{
-		$allocine = '<img class="icon" src="./img/info_all_deny.png" />';	
+		$allocine = '<img class="icon" src="./img/info_all_deny.png" width="16px" style="border:0px;vertical-align:top;"/>';	
 	}
 	return $allocine;
 }
@@ -476,7 +476,8 @@ function detect_chaine($chaine, $type)
 									"/\.xm/",
 									"/\.icns/",
 									"/\APEInject/",
-									"/\.NFO/");  
+									"/\.NFO/",
+									"/\.plist/");  
         		foreach($forbiden as $value)
 				{        
 					if(preg_match($value, $chaine)) $bool = true;

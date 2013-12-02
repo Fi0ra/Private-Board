@@ -67,6 +67,7 @@ Membre administration
 				<option value="style10.css">Think different - Sun flower yellow</option>				
 				<option value="style5.css">There will be 2 kinds of people - Pumpkin orange</option>
 				<option value="style6.css">The Power to Be Your Best - Pomegranate red</option>
+			    <option value="style_noel.css">YourCreation Wish Merry Christmas</option>
 			</select>
 		    <input type="submit" value="Valider" class="valide"/>
 		</form>
@@ -94,6 +95,7 @@ Membre administration
 					elseif($ligne->userstyle == "style10.css"){ $style = "Think different - Sun flower yellow - Yourcreation.fr"; }
 					elseif($ligne->userstyle == "style5.css"){ $style = "There will be 2 kinds of people - Pumpkin orange - Yourcreation.fr"; }
 					elseif($ligne->userstyle == "style6.css"){ $style = "The Power to Be Your Best - Pomegranate red - Yourcreation.fr"; }
+					elseif($ligne->userstyle == "style_noel.css"){ $style = "YourCreation Wish Merry Christmas"; }
 					else{ $style = "---"; }
 					echo '
 						<tr>

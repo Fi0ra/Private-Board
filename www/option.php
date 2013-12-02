@@ -50,6 +50,7 @@ elseif($ligne->userstyle == "style8.css"){ $style = "Switch - Emerald Green - Yo
 elseif($ligne->userstyle == "style10.css"){ $style = "Think different - Sun flower yellow - Yourcreation.fr"; }
 elseif($ligne->userstyle == "style5.css"){ $style = "There will be 2 kinds of people - Pumpkin orange - Yourcreation.fr"; }
 elseif($ligne->userstyle == "style6.css"){ $style = "The Power to Be Your Best - Pomegranate red - Yourcreation.fr"; }
+elseif($ligne->userstyle == "style_noel.css"){ $style = "YourCreation Wish Merry Christmas"; }
 else{ $style = "---"; }
 
 if($ligne->userstream == "0"){ $stream = "Plugin web VLC media player"; }
@@ -73,6 +74,7 @@ elseif($ligne->userstream == "1"){ $stream = "Plugin web Divx web player"; }
 				<option value="10">Think different - Sun flower yellow - Yourcreation.fr</option>				
 				<option value="5">There will be 2 kinds of people - Pumpkin orange - Yourcreation.fr</option>
 				<option value="6">The Power to Be Your Best - Pomegranate red - Yourcreation.fr</option>
+			    <option value="11">YourCreation Wish Merry Christmas</option>
 			  </select>
 			  <input type="submit" value="Valider"  class="valide" />
 			</form>
