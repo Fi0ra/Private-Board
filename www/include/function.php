@@ -333,13 +333,21 @@ function defineCat($code)
             break;
         case '111':$cat = "cat-tv-hd-vostfr";return $cat;
             break;
+        case '121':$cat = "cat-tv-hd-vostfr";return $cat;
+            break;
+        case '011':$cat = "cat-tv-vostfr";return $cat;
+            break;
+        case '021':$cat = "cat-tv-vf";return $cat;
+            break;
+        case '001':$cat = "cat-tv-vo";return $cat;
+            break;
+        case '201':$cat = "cat-tv-hd-vf";return $cat;
+            break;
         case '120':$cat = "cat-hd-720p";return $cat;
             break;
         case '104':$cat = "cat-hd-720p";return $cat;
             break;
         case '124':$cat = "cat-hd-720p";return $cat;
-            break;
-        case '121':$cat = "cat-tv-hd-vostfr";return $cat;
             break;
         case '200':$cat = "cat-hd-1080p";return $cat;
             break;
@@ -350,10 +358,6 @@ function defineCat($code)
         case '004':$cat = "cat-dvdrip";return $cat;
             break;
         case '014':$cat = "cat-dvdrip-vostfr";return $cat;
-            break;
-        case '011':$cat = "cat-tv-vostfr";return $cat;
-            break;
-        case '021':$cat = "cat-tv-vf";return $cat;
             break;
         case '005':$cat = "cat-ebook";return $cat;
             break;
@@ -380,8 +384,6 @@ function defineCat($code)
         case '223':$cat = "cat-doc-hd";return $cat;
             break;
         case '123':$cat = "cat-doc-hd";return $cat;
-            break;
-        case '001':$cat = "cat-tv-vo";return $cat;
             break;
     	default: $cat = "cat-divers"; return $cat;
     }
@@ -612,7 +614,7 @@ function tri_folderv4($directory, $recursive = true, $listDirs = false, $listFil
 	$table_film = array("100", "120", "200", "220", "024", "014", "004", "104", "124");
     $table_musique = array("002");
 	$table_ebooks = array("005", "025");
-	$table_series = array("111", "121", "011", "021", "001", "011");
+	$table_series = array("111", "121", "011", "021", "001", "011", "201");
 	$table_autre_tous = array_merge($table_film, $table_musique, $table_ebooks, $table_series);
 	
 	switch($cat)
