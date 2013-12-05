@@ -60,13 +60,8 @@ Membre administration
 			<label for="userstyle"> Style : </label>
 			<select name="userstyle">
 			    <option value="style3.css">This is a revolution - Shadow dark</option>
-			    <option value="style4.css">Byte into an apple - Midnight blue</option>
-				<option value="style9.css">Private board for the rest of us - Peter river blue</option>
-				<option value="style7.css">Get a Private board - Sea Turquoise</option>
-				<option value="style8.css">Switch - Emerald Green</option>	
-				<option value="style10.css">Think different - Sun flower yellow</option>				
-				<option value="style5.css">There will be 2 kinds of people - Pumpkin orange</option>
-				<option value="style6.css">The Power to Be Your Best - Pomegranate red</option>
+			    <option value="style4.css">Byte into an apple - Midnight blue</option>		
+				<option value="style5.css">There will be 2 kinds of people - Platine</option>
 			    <option value="style_noel.css">YourCreation Wish Merry Christmas</option>
 			</select>
 		    <input type="submit" value="Valider" class="valide"/>
@@ -89,12 +84,7 @@ Membre administration
 			{
 					if($ligne->userstyle == "style3.css"){ $style = "This is a revolution - Shadow dark - Yourcreation.fr"; }
 					elseif($ligne->userstyle == "style4.css"){ $style = "Byte into an apple - Midnight blue - Yourcreation.fr"; }
-					elseif($ligne->userstyle == "style9.css"){ $style = "Private board for the rest of us - Peter river blue - Yourcreation.fr"; }
-					elseif($ligne->userstyle == "style7.css"){ $style = "Get a Private board - Sea Turquoise - Yourcreation.fr"; }
-					elseif($ligne->userstyle == "style8.css"){ $style = "Switch - Emerald Green - Yourcreation.fr"; }
-					elseif($ligne->userstyle == "style10.css"){ $style = "Think different - Sun flower yellow - Yourcreation.fr"; }
-					elseif($ligne->userstyle == "style5.css"){ $style = "There will be 2 kinds of people - Pumpkin orange - Yourcreation.fr"; }
-					elseif($ligne->userstyle == "style6.css"){ $style = "The Power to Be Your Best - Pomegranate red - Yourcreation.fr"; }
+					elseif($ligne->userstyle == "style5.css"){ $style = "There will be 2 kinds of people - Platine - Yourcreation.fr"; }
 					elseif($ligne->userstyle == "style_noel.css"){ $style = "YourCreation Wish Merry Christmas"; }
 					else{ $style = "---"; }
 					echo '

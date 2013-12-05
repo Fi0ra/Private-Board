@@ -44,12 +44,7 @@ $ligne = $resultats->fetch();
 
 if($ligne->userstyle == "style3.css"){ $style = "This is a revolution - Shadow dark - Yourcreation.fr"; }
 elseif($ligne->userstyle == "style4.css"){ $style = "Byte into an apple - Midnight blue - Yourcreation.fr"; }
-elseif($ligne->userstyle == "style9.css"){ $style = "Private board for the rest of us - Peter river blue - Yourcreation.fr"; }
-elseif($ligne->userstyle == "style7.css"){ $style = "Get a Private board - Sea Turquoise - Yourcreation.fr"; }
-elseif($ligne->userstyle == "style8.css"){ $style = "Switch - Emerald Green - Yourcreation.fr"; }
-elseif($ligne->userstyle == "style10.css"){ $style = "Think different - Sun flower yellow - Yourcreation.fr"; }
-elseif($ligne->userstyle == "style5.css"){ $style = "There will be 2 kinds of people - Pumpkin orange - Yourcreation.fr"; }
-elseif($ligne->userstyle == "style6.css"){ $style = "The Power to Be Your Best - Pomegranate red - Yourcreation.fr"; }
+elseif($ligne->userstyle == "style5.css"){ $style = "There will be 2 kinds of people - Platine - Yourcreation.fr"; }
 elseif($ligne->userstyle == "style_noel.css"){ $style = "YourCreation Wish Merry Christmas"; }
 else{ $style = "---"; }
 
@@ -67,13 +62,8 @@ elseif($ligne->userstream == "1"){ $stream = "Plugin web Divx web player"; }
 		   	<label for="style"> Sélectionner votre Style : </label>
 			  <select name="style">
 			    <option value="3">This is a revolution - Shadow dark - Yourcreation.fr</option>
-			    <option value="4">Byte into an apple - Midnight blue - Yourcreation.fr</option>
-				<option value="9">Private board for the rest of us - Peter river blue - Yourcreation.fr</option>
-				<option value="7">Get a Private board - Sea Turquoise - Yourcreation.fr</option>
-				<option value="8">Switch - Emerald Green - Yourcreation.fr</option>	
-				<option value="10">Think different - Sun flower yellow - Yourcreation.fr</option>				
-				<option value="5">There will be 2 kinds of people - Pumpkin orange - Yourcreation.fr</option>
-				<option value="6">The Power to Be Your Best - Pomegranate red - Yourcreation.fr</option>
+			    <option value="4">Byte into an apple - Midnight blue - Yourcreation.fr</option>			
+				<option value="5">There will be 2 kinds of people - Platine - Yourcreation.fr</option>
 			    <option value="11">YourCreation Wish Merry Christmas</option>
 			  </select>
 			  <input type="submit" value="Valider"  class="valide" />

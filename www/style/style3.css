@@ -204,31 +204,46 @@ Menu left
 
 #menu ul {
 	list-style-type: none;
-	margin-left:-30px;
-	margin-top:30px;
-	margin-bottom:20px;
+	margin-left:-40px;
+	margin-top:0px;
 }
+
 #menu ul li #content_list {
-	height:20px;
-	width:220px;
-	margin-bottom:4px;
+	height:22px;
+	padding-top:6px;
+	width:240px;
 	font-size: 90%;
+	border-top: 1px solid #303030;
+	border-bottom: 1px solid #191919;
+	background: #2c2c2c;
+
 }
 
-#menu ul li #content_list.cat{background-image:url("../img/ico/folder.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.cat-current{background-image:url("../img/ico/folder_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.cat:hover {background: #2c2c2c;background-image:url("../img/ico/folder_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
+#menu ul li #title_list {
+	height:24px;
+	padding-top:8px;
+	width:225px;
+	font-size: 90%;
+	border-top: 1px solid #303030;
+	border-bottom: 1px solid #191919;
+	background: #1e1e1e;
+	padding-left:15px;
+}
 
-#menu ul li #content_list.personal{background-image:url("../img/ico/note.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.personal-current{background-image:url("../img/ico/note_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.personal:hover {background: #2c2c2c;background-image:url("../img/ico/note_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
+#menu ul li #content_list.cat{background-image:url("../img/ico/folder.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.cat-current{background-image:url("../img/ico/folder_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.cat:hover {background: #252525;background-image:url("../img/ico/folder_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
 
-#menu ul li #content_list.link{background-image:url("../img/ico/link.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.link:hover {background: #2c2c2c;background-image:url("../img/ico/link_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
+#menu ul li #content_list.personal{background-image:url("../img/ico/note.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.personal-current{background-image:url("../img/ico/note_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.personal:hover {background: #252525;background-image:url("../img/ico/note_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
 
-#menu ul li #content_list.admin{background-image:url("../img/ico/engrenage.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.admin-current{background-image:url("../img/ico/engrenage_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.admin:hover {background: #2c2c2c;background-image:url("../img/ico/engrenage_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
+#menu ul li #content_list.link{background-image:url("../img/ico/link.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.link:hover {background: #252525;background-image:url("../img/ico/link_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
+
+#menu ul li #content_list.admin{background-image:url("../img/ico/engrenage.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.admin-current{background-image:url("../img/ico/engrenage_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.admin:hover {background: #252525;background-image:url("../img/ico/engrenage_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
 
 #menu ul li #content_list a.url {
 	height:18px;

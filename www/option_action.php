@@ -55,36 +55,6 @@ switch($action)
 					$selection = $connexion->quote($select); 
 					$count = $connexion->exec("UPDATE users SET userstyle = $selection WHERE username = $username");
 				break;
-				case 6:
-					$select="style6.css";
-					$username = $connexion->quote($_SESSION['login']); 
-					$selection = $connexion->quote($select); 
-					$count = $connexion->exec("UPDATE users SET userstyle = $selection WHERE username = $username");
-				break;
-				case 7:
-					$select="style7.css";
-					$username = $connexion->quote($_SESSION['login']); 
-					$selection = $connexion->quote($select); 
-					$count = $connexion->exec("UPDATE users SET userstyle = $selection WHERE username = $username");
-				break;
-				case 8:
-					$select="style8.css";
-					$username = $connexion->quote($_SESSION['login']); 
-					$selection = $connexion->quote($select); 
-					$count = $connexion->exec("UPDATE users SET userstyle = $selection WHERE username = $username");
-				break;
-				case 9:
-					$select="style9.css";
-					$username = $connexion->quote($_SESSION['login']); 
-					$selection = $connexion->quote($select); 
-					$count = $connexion->exec("UPDATE users SET userstyle = $selection WHERE username = $username");
-				break;
-				case 10:
-					$select="style10.css";
-					$username = $connexion->quote($_SESSION['login']); 
-					$selection = $connexion->quote($select); 
-					$count = $connexion->exec("UPDATE users SET userstyle = $selection WHERE username = $username");
-				break;
 				case 11:
 					$select="style_noel.css";
 					$username = $connexion->quote($_SESSION['login']); 

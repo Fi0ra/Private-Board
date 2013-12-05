@@ -119,6 +119,9 @@ if (isset($_GET['tri_type'])) {$tri_type = $_GET['tri_type'];}
 if($_SESSION['lvl'] == 0 || $_SESSION['lvl'] == 1)
 {
 		echo '<div id="menu"><ul>';
+		
+		echo '<li><div id="title_list">Catégories</div></li>';
+
 			if($url_slash[$nb_slash] == "index.php"){echo '<li><div id="content_list" class="cat-current"><a href="index.php" class="url">Accueil</a></div></li>';}
 			else{echo '<li><div id="content_list" class="cat"><a href="index.php" class="url">Accueil</a></div></li>';}		
 			if($url_egal[$nb_egal] == "Films"){echo '<li><div id="content_list" class="cat-current"><a href="index.php?cat=Films" class="url">Films</a></div></li>';}
@@ -131,7 +134,9 @@ if($_SESSION['lvl'] == 0 || $_SESSION['lvl'] == 1)
 			else{echo '<li><div id="content_list" class="cat"><a href="index.php?cat=eBooks" class="url">eBooks</a></div></li>';}		
 			if($url_egal[$nb_egal] == "Autre"){echo '<li><div id="content_list" class="cat-current"><a href="index.php?cat=Autre" class="url">Autre</a></div></li>';}
 			else{echo '<li><div id="content_list" class="cat"><a href="index.php?cat=Autre" class="url">Autre</a></div></li>';}					
-		echo '</ul><ul>';
+		
+		echo '<li><div id="title_list">Séries</div></li>';
+
 		
 			$resultats=$connexion->query("SELECT name, text_to_match FROM categories ORDER BY name ASC"); 
 			$resultats->setFetchMode(PDO::FETCH_OBJ);
@@ -142,7 +147,8 @@ if($_SESSION['lvl'] == 0 || $_SESSION['lvl'] == 1)
 			}
 			$resultats->closeCursor();
 			
-		echo '</ul><ul>';
+		echo '<li><div id="title_list">Liens</div></li>';
+		
 			$resultats=$connexion->query("SELECT name, url FROM url ORDER BY id ASC"); 
 			$resultats->setFetchMode(PDO::FETCH_OBJ);
 			while( $ligne = $resultats->fetch() ) 

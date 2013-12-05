@@ -8,7 +8,7 @@ Corps et texte principaux de la page
  */ 
 
 html{
-	background:#2c3e50;	
+	background:#263747;	
 	color: #b2b2ad;
 	font:inherit;
 	font-size:95%
@@ -63,9 +63,9 @@ Top header
  */ 
 
 #top {
-	background:url("../img/logo_noel.png") no-repeat center center #2c3e50;
+	background:url("../img/logo_noel.png") no-repeat center center #263747;
 	width:100%;
-	height:52px;	
+	height:50px;	
 	margin:0px;
 	padding:0px;
 }
@@ -175,11 +175,11 @@ Title Bar top
 
 .r-center { text-align:center; top:0px;}
 
-.r-left { float:left; background-color:#2c3e50; width:165px; border:1px solid #000; border-radius:10px; height:18px; margin-left:-5px; margin-top:-1px; padding-left:8px;padding-top:2px;}
+.r-left { float:left; background-color:#263747; width:165px; border:1px solid #000; border-radius:10px; height:18px; margin-left:-5px; margin-top:-1px; padding-left:8px;padding-top:2px;}
 .r-left .button { float: right; background-color:#151515; color: #787878; border:1px solid #000; border-radius:10px; width:140px; height:18px;text-align:center; margin-top:-2px;}
 .r-right .button:hover {background-color:#0d0d0d;}
 
-.r-right { float:right; background-color:#2c3e50; width:145px; border:1px solid #000; border-radius:5px; height:16px; margin-right:4px; margin-top:0px; padding-left:8px;padding-top:1px;font-size:12px; text-shadow: 0px 0px 0px #000;}
+.r-right { float:right; background-color:#263747; width:145px; border:1px solid #000; border-radius:5px; height:16px; margin-right:4px; margin-top:0px; padding-left:8px;padding-top:1px;font-size:12px; text-shadow: 0px 0px 0px #000;}
 .r-right input { float: right; background-color:#151515; color: #787878; border:1px solid #000; border-radius:10px; width:140px; height:16px;text-align:center; margin-top:-2px;}
 .r-right input:focus {background-color:#0d0d0d;}
 
@@ -197,38 +197,54 @@ Menu left
 	bottom:45px;
 	float:left;
 	width:240px;
-	background: #2c3e50;
+	background: #263747;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
-
 #menu ul {
 	list-style-type: none;
-	margin-left:-30px;
-	margin-top:30px;
-	margin-bottom:20px;
+	margin-left:-40px;
+	margin-top:0px;
 }
+
 #menu ul li #content_list {
-	height:20px;
-	width:220px;
-	margin-bottom:4px;
+	height:22px;
+	padding-top:6px;
+	width:240px;
 	font-size: 90%;
+	border-top: 1px solid #44607d;
+	border-bottom: 1px solid #1d2935;
+	background: #304457;
+
 }
 
-#menu ul li #content_list.cat{background-image:url("../img/ico/folder_noel.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.cat-current{background-image:url("../img/ico/folder_blue_noel.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.cat:hover {background: #34495e;background-image:url("../img/ico/folder_blue_noel.png");background-repeat: no-repeat;background-position: 15px 2px; color:00aeff;}
+#menu ul li #title_list {
+	height:24px;
+	padding-top:8px;
+	width:225px;
+	font-size: 90%;
+	border-top: 1px solid #44607d;
+	border-bottom: 1px solid #1d2935;
+	background: #263747;
+	padding-left:15px;
+	color:#fff;
+}
 
-#menu ul li #content_list.personal{background-image:url("../img/ico/note.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.personal-current{background-image:url("../img/ico/note_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.personal:hover {background: #34495e;background-image:url("../img/ico/note_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
+#menu ul li #content_list.cat{background-image:url("../img/ico/folder.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.cat-current{background-image:url("../img/ico/folder_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.cat:hover {background: #2c3d4f;background-image:url("../img/ico/folder_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
 
-#menu ul li #content_list.link{background-image:url("../img/ico/link.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.link:hover {background: #34495e;background-image:url("../img/ico/link_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
+#menu ul li #content_list.personal{background-image:url("../img/ico/note.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.personal-current{background-image:url("../img/ico/note_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.personal:hover {background: #2c3d4f;background-image:url("../img/ico/note_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
 
-#menu ul li #content_list.admin{background-image:url("../img/ico/engrenage.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.admin-current{background-image:url("../img/ico/engrenage_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
-#menu ul li #content_list.admin:hover {background: #34495e;background-image:url("../img/ico/engrenage_blue.png");background-repeat: no-repeat;background-position: 15px 2px;}
+#menu ul li #content_list.link{background-image:url("../img/ico/link.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.link:hover {background: #2c3d4f;background-image:url("../img/ico/link_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
+
+#menu ul li #content_list.admin{background-image:url("../img/ico/engrenage.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.admin-current{background-image:url("../img/ico/engrenage_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
+#menu ul li #content_list.admin:hover {background: #2c3d4f;background-image:url("../img/ico/engrenage_blue.png");background-repeat: no-repeat;background-position: 15px 7px;}
+
 
 #menu ul li #content_list a.url {
 	height:18px;
